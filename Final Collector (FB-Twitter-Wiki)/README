@@ -1,0 +1,47 @@
+Social Media Posts Collector 
+Author: Sarah Pan 
+
+DESCRIPTION
+--------------------------------------------------------------------------------
+Program generates separate csv files for 3 different social media platforms:
+ -- Facebook
+ -- Twitter
+ -- Wikipedia
+
+Information is provided for the top 100 social media users and output in 
+csv is of the following format:
+
+Username  |	 Posts
+[]			 []
+[]			 []
+.			 .
+.			 .
+.			 .
+
+GENERAL USAGE
+--------------------------------------------------------------------------------
+To run program, go to terminal and enter folder where program is stored. 
+
+Folder contains an edited top100_users.csv, which lists the top 100 social 
+media users based on Twitter. You can generate this file again if you uncomment
+#get_top_100() in the main function of fb_twitter_wiki_collector.py.
+WARNING: this will return an unrefined/unedited csv file that may 
+contain incorrect usernames or empty names because the webpage that was scraped
+is not updated. Thus, it is recommended to not alter the top100_users.csv file. 
+
+Program requires Python 3. 
+
+To run command: 
+ -- python fb_twitter_wiki_collector.py
+
+Output files are Facebook.csv, Twitter.csv, and Wikipedia.csv. 
+
+PROGRAM OPTIONS
+---------------------------------------------------------------------------------
+There are Options 1, 2, and 3 within the main function. 
+Option 1 generates a csv of all tweets
+Option 2 generates a csv of all fb posts 
+Option 3 generates a csv of all wikipedia pages 
+
+User can comment out any of these independent options to select which social 
+media platform to extract information from. 
